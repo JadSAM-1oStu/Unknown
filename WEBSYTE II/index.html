@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ArtISan DeSIGN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Franklin Gothic Medium", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ARTS</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PREFERENCES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTS</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">GENRES</a>
+        <a href="#" class="w3-bar-item w3-button">EXTRAS</a>
+        <a href="#" class="w3-bar-item w3-button">MEDIA</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ARTS</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PREFERENCES</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACTS</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GENRES</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Online Competition</h3>
+      <p><b>Compete and share around onnline today!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://images.squarespace-cdn.com/content/v1/535d6445e4b071a2c2e121a2/6b4d8b58-0a4a-453a-9c2a-6863ad87922c/La+Gallina+de+los+Huevos+de+Oro+by+Blanca+Esther+Gomez.jpg" style="width:60%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Art Sharing</h3>
+      <p><b>The place where artists share and implicate some unique styles.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Explore</h3>
+      <p><b>Look around the Hub.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">artISan DEsign</h2>
+    <p class="w3-opacity"><i>An educating site for beginners and expert artists, leanr some basics, genres, and others to get better in learning your experiences as artisans and may be create something you ever dreamed.</i></p>
+    <p class="w3-justify">This website imports any kind of art and favorites you ever want, explore around and maybe share your own creation! As always, you can create something in your imagination or if you are a veteran.
+      And also report for any abuses or inapprpriate content that is restricted to the website and we'll deal with it or contact our manager below the tab.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>How to draw expertly or trace things into your own desgin for Beginners and Experts</p>
+        <img src="data:image/jpeg;base64,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" class="w3-round w3-margin-bottom" alt="Starters" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Explore around the Arts Hub here-></p>
+        <img src="https://img.freepik.com/free-vector/design-hub-logo-vector_53876-40514.jpg" class="w3-round w3-margin-bottom" alt="Artisan Design" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Courses if you like to answer some activities and assessments to task.</p>
+        <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s906b641b686670d9/image/if945f474f85c7a00/version/1573366380/image.jpg" class="w3-round" alt="Modulars" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">GENRES</h2>
+      <p class="w3-opacity w3-center"><i>Pick any kind of genres you want to create!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">Anime <span class="w3-tag w3-black w3-margin-left">RPG/Cartoon/Shows</span></li>
+        <li class="w3-padding">Digital <span class="w3-tag w3-black w3-margin-left">AI/Screentouch/Animation</span></li>
+        <li class="w3-padding">Skecthes <span class="w3-tag w3-black w3-margin-right">Color/Pen/Shade/Trace</span></li>
+        <li class="w3-padding">Crafts <span class="w3-tag w3-black w3-margin-left">Origami/Clay/Scraps</span></li>
+        <li class="w3-padding">Sculptures <span class="w3-tag w3-black w3-margin-left">Wood/Porcelain/Stone</span></li>
+        <li class="w3-padding">Paintings <span class="w3-tag w3-black w3-margin-left">WaterColor</span></li>
+    </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://lh3.googleusercontent.com/lPbqx1-G6DxoBH78MiaDVxsR5jcFXYBzkPdFrBert8xTmkR7I5BYLEOTTvWw7Fj3ijLIRTfA8SM7kPzljywPdPkX1g=s1280-w1280-h800" alt="Online" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Art SCRIBBLE(I.O. Online)</b></p>
+            <p class="w3-opacity">Tue/Dec/27/24</p>
+            <p>Join an art competition site</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Scheduled</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.rappler.com/tachyon/2023/05/346104480_743358094248809_2856705663182748378_n.jpg?resize=1500%2C1125&zoom=1" alt="Baguio" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Baguio</b></p>
+            <p class="w3-opacity">Sun/Feb/29/2025</p>
+            <p>Wonder aorund every art chalk in blessed Sundays</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Enter</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGAO1qIg8OP8E4plWMdLvc-mSYgjiG_g0VvrFvk6mGgyRuzSAGcH1qZVUnd1raawbzqNc&usqp=CAU" alt="La Trinidad" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>La Trinidad</b></p>
+            <p class="w3-opacity">Sat//Apr/01/2025</p>
+            <p>Present some wild and crazy artstyles along sme other artists!</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Scheduled</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">some help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Want more, explore around.</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Benguet, Philippines<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: /////////////<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: JADZZZ@zmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Jad Ebaño Bumacas</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
